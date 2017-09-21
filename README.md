@@ -10,7 +10,7 @@ Check to ensure that the browser platform has been added by typing `ionic cordov
 
 Check to ensure that the InAppBrowser plugin has been added by typing `ionic cordova plugin list`. If it is not there, add the InAppBrowser plugin to the project by typing `ionic cordova plugin add cordova-plugin-inappbrowser`.
 
-##JSON Server##
+## JSON Server
 This demo relies on json-server.
 
 To use npm to install install json-server
