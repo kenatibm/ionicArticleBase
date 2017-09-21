@@ -53,6 +53,8 @@ export class ArticleDetailPage {
         url: [this.article.url, Validators.compose([Validators.required, Validators.pattern('^(http|https):\/\/[^ "]+$')])],
         favorite: [this.article.favorite]
       });
+
+      this.initForm();
   }
 
   initForm() {

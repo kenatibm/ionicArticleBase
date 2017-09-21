@@ -47,12 +47,12 @@
     },
     {
       "createdDate": "2017-09-20T22:35:23.919Z",
-      "favorite": true,
+      "favorite": false,
       "title": "Ken@IBM",
       "url": "http://www.kenatibm.com",
       "category": "Mobile",
       "id": 7,
-      "updateDate": "2017-09-21T00:55:41.645Z"
+      "updateDate": "2017-09-21T17:03:41.346Z"
     },
     {
       "createdDate": "2017-09-20T22:39:19.511Z",
