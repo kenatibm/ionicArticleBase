@@ -1,0 +1,45 @@
+<ion-header>
+    <ion-navbar color="primary">
+      <ion-title>
+        Article Details
+      </ion-title>
+      <ion-buttons end>
+        <button ion-button (click)="save()" [disabled]="!this.articleForm.dirty || !articleForm.valid">
+          Done
+        </button>
+      </ion-buttons>
+    </ion-navbar>
+  </ion-header>
+
+  <ion-content>
+    <form [formGroup]="articleForm">
+      <ion-item>
+        <ion-label stacked  color="primary">
+          Title
+        </ion-label>
+        <ion-input type="text" placeholder="Enter Title"  formControlName="title"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label stacked  color="primary">
+          URL
+        </ion-label>
+        <ion-input type="text" placeholder="Enter URL" formControlName="url"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label stacked  color="primary">
+          Categories
+        </ion-label>
+        <ion-input type="text" placeholder="Add categories"  formControlName="categories"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label color="primary">
+          Is a Favorite
+        </ion-label>
+        <ion-toggle color="positive" checked="false" formControlName="favorite"></ion-toggle>
+      </ion-item>
+    </form>
+
+    <button ion-button full outline (click)="visitURL()">
+        <ion-icon [name]="'globe-outline'" color="primary" ></ion-icon> Visit {{this.article.title}}
+    </button>
+</ion-content>

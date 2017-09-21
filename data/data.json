@@ -1,0 +1,67 @@
+{
+  "articles": [
+    {
+      "title": "IBM Mobile DeveloperWorks",
+      "category": "Mobile",
+      "favorite": true,
+      "url": "http://mobilefirstplatform.ibmcloud.com/",
+      "createdDate": "2017-09-20",
+      "updateDate": "2017-09-20",
+      "id": 2
+    },
+    {
+      "title": "IBM API Connect DeveloperWorks",
+      "category": "API",
+      "favorite": true,
+      "url": "https://developer.ibm.com/apiconnect/",
+      "createdDate": "2017-09-20",
+      "updateDate": "2017-09-20",
+      "id": 3
+    },
+    {
+      "title": "IBM API Connect",
+      "category": "API",
+      "favorite": true,
+      "url": "http://www-03.ibm.com/software/products/en/api-connect",
+      "createdDate": "2017-09-20",
+      "updateDate": "2017-09-20T23:50:54.128Z",
+      "id": 4
+    },
+    {
+      "title": "IBM Bluemix",
+      "category": "Cloud",
+      "favorite": true,
+      "url": "https://www.ibm.com/cloud-computing/bluemix/",
+      "createdDate": "2017-09-20",
+      "updateDate": "2017-09-20T23:54:47.567Z",
+      "id": 5
+    },
+    {
+      "title": "IBM Cloud",
+      "category": "Cloud",
+      "favorite": true,
+      "url": "https://www.ibm.com/cloud-computing/",
+      "createdDate": "2017-09-20",
+      "updateDate": "2017-09-21T00:56:45.498Z",
+      "id": 6
+    },
+    {
+      "createdDate": "2017-09-20T22:35:23.919Z",
+      "favorite": true,
+      "title": "Ken@IBM",
+      "url": "http://www.kenatibm.com",
+      "category": "Mobile",
+      "id": 7,
+      "updateDate": "2017-09-21T00:55:41.645Z"
+    },
+    {
+      "createdDate": "2017-09-20T22:39:19.511Z",
+      "favorite": true,
+      "title": "Apple Website",
+      "url": "http://www.apple.com",
+      "category": "Software",
+      "id": 8,
+      "updateDate": "2017-09-21T13:38:47.195Z"
+    }
+  ]
+}

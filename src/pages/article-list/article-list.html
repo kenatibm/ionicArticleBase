@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      Articles
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only  (click)="addArticle()">
+        <ion-icon name="add"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <ion-refresher (ionRefresh)="getAllArticles($event)">
+    <ion-refresher-content 
+      pullingIcon="arrow-dropdown"
+      pullingText="Pull to refresh"
+      refreshingSpinner="circles"
+      refreshingText="Refreshing...">
+    </ion-refresher-content>
+  </ion-refresher>
+
+  <ion-searchbar 
+  [formControl]="searchControl" 
+  [(ngModel)]="searchTerm" 
+  (ionInput)="setFilteredItems()" 
+  (ionCancel)="getAllArticles()" 
+  [showCancelButton]="shouldShowCancel"></ion-searchbar>
+  
+  <ion-list id="articleList">
+    <ion-item-sliding *ngFor="let article of allArticles" >
+      <button ion-item (click)="editArticle(article)" >
+        <ion-icon [name]="article.favorite ? 'star' : 'star-outline'" item-left></ion-icon>
+        <h2>{{article.title}}</h2>
+        <p>{{article.url}}</p>
+      </button>
+      <ion-item-options>
+        <button ion-button color="danger" (click)="deleteArticle(article.id)"><ion-icon [name]="'trash-outline'"></ion-icon>Delete</button>
+        <button ion-button color="secondary" (click)="visitURL(article.url)"><ion-icon [name]="'globe-outline'"></ion-icon>Visit</button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+</ion-content>
