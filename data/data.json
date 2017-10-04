@@ -2,20 +2,20 @@
   "articles": [
     {
       "title": "IBM Mobile DeveloperWorks",
-      "category": "Mobile",
-      "favorite": true,
+      "category": "Mobile, API",
+      "favorite": false,
       "url": "http://mobilefirstplatform.ibmcloud.com/",
       "createdDate": "2017-09-20",
-      "updateDate": "2017-09-20",
+      "updateDate": "2017-10-03T23:01:19.786Z",
       "id": 2
     },
     {
       "title": "IBM API Connect DeveloperWorks",
-      "category": "API",
+      "category": "Mobile, API",
       "favorite": true,
       "url": "https://developer.ibm.com/apiconnect/",
       "createdDate": "2017-09-20",
-      "updateDate": "2017-09-20",
+      "updateDate": "2017-10-03T22:53:18.577Z",
       "id": 3
     },
     {
@@ -47,12 +47,12 @@
     },
     {
       "createdDate": "2017-09-20T22:35:23.919Z",
-      "favorite": false,
+      "favorite": true,
       "title": "Ken@IBM",
       "url": "http://www.kenatibm.com",
       "category": "Mobile",
       "id": 7,
-      "updateDate": "2017-09-21T17:03:41.346Z"
+      "updateDate": "2017-09-27T16:27:28.853Z"
     },
     {
       "createdDate": "2017-09-20T22:39:19.511Z",

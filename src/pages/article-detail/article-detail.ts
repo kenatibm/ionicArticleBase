@@ -73,6 +73,9 @@ export class ArticleDetailPage {
     this.articleForm.controls["favorite"].valueChanges.subscribe( data=> {
       console.log(`==> FAVORITE: ${data}`);
       this.article.favorite = data;
+      if(this.article.id != 0) {
+        this.updateArticle();
+      }
     });
   }
 
@@ -82,22 +85,30 @@ export class ArticleDetailPage {
 
   save() {    
     if(this.article.id == 0) {
-      this.articleProvider.createArticle(this.article)
-        .subscribe(data => {
-          this.articleProvider.getAllArticles();
-          this.navCtrl.pop();
-        }, error => {
-          console.log(`==> CREATE ERROR: ${JSON.stringify(error)}`);
-        });
+      this.createArticle();
     } else {
-      this.articleProvider.updateArticle(this.article)
-        .subscribe(data => {
-          this.articleProvider.getAllArticles();
-          this.navCtrl.pop();
-        }, error => {
-          console.log(`==> CREATE ERROR: ${JSON.stringify(error)}`);
-        });
+      this.updateArticle();
+      this.navCtrl.pop();
     }
+  }
+
+  private createArticle() {
+    this.articleProvider.createArticle(this.article)
+    .subscribe(data => {
+      this.articleProvider.getAllArticles();
+      this.navCtrl.pop();
+    }, error => {
+      console.log(`==> CREATE ERROR: ${JSON.stringify(error)}`);
+    });
+  }
+
+  private updateArticle(): any {
+    this.articleProvider.updateArticle(this.article)
+      .subscribe(data => {
+        this.articleProvider.getAllArticles();
+    }, error => {
+      console.log(`==> CREATE ERROR: ${JSON.stringify(error)}`);
+    });
   }
 
   visitURL(){
